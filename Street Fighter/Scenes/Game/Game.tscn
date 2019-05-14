@@ -1,12 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/Game/Extras/Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Game/Extras/Health Bar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Background/Tileset_Provisional.tres" type="TileSet" id=3]
 [ext_resource path="res://Material Demo/Bill Blaster.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Game/Extras/Timer.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/Game/Extras/Edges.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/Game/Extras/Ryu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Game/Extras/Ryu.tscn" type="PackedScene" id=5]
 
 [node name="Joc" type="Node2D"]
 
@@ -35,15 +33,7 @@ tile_data = PoolIntArray( 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0
 position = Vector2( 1000, 1000 )
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Timer" parent="." instance=ExtResource( 5 )]
-margin_left = 605.991
-margin_top = 47.4684
-margin_right = 1105.99
-margin_bottom = 547.468
-
-[node name="Edges" parent="." instance=ExtResource( 6 )]
-
-[node name="Ryu" parent="." instance=ExtResource( 7 )]
+[node name="Ryu" parent="." instance=ExtResource( 5 )]
 
 [node name="Bola" type="Node" parent="."]
 
