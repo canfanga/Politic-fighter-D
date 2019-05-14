@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Super Mario Bros 3-Cannon Sound Effect.ogg-5a5eb77c1f453867e880b6d07d28e2e6.oggstr"
+
+[deps]
+
+source_file="res://Material Demo/Super Mario Bros 3-Cannon Sound Effect.ogg"
+dest_files=[ "res://.import/Super Mario Bros 3-Cannon Sound Effect.ogg-5a5eb77c1f453867e880b6d07d28e2e6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

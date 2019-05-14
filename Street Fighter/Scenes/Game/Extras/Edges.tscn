@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10.1028, 360.121 )
+
+[node name="Edges" type="KinematicBody2D"]
+
+[node name="Left" type="CollisionShape2D" parent="."]
+position = Vector2( -10, 360 )
+shape = SubResource( 1 )
+
+[node name="Right" type="CollisionShape2D" parent="."]
+position = Vector2( 1290, 360 )
+shape = SubResource( 1 )
+

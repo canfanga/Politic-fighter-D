@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Main Menu/Buttons/Button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Main Menu/Options Button.gd" type="Script" id=2]
+
+
+[node name="Options" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Label" parent="." index="0"]
+text = "Options"
+
+[connection signal="pressed" from="." to="." method="_on_Options_pressed"]
