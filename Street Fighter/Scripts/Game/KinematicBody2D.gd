@@ -8,6 +8,7 @@ var pegant = false
 var pot_disparar = true
 var mirant_dreta = true
 var escena_bola = preload("res://Scenes/Game/Extras/Kamikami.tscn")
+var health = 100
 
 func _ready():
 	pass
@@ -41,7 +42,7 @@ func anima():
 	elif velocitat.y != 0:
 		if velocitat.y < 0:
 			$AnimatedSprite.animation = 'puja_salt'
-		if velocitat.y > 0:
+		if velocitat.y > 12:
 			$AnimatedSprite.animation = "baixa_salt"
 		if $RayCast2D.is_colliding():
 			$AnimatedSprite.animation = "acaba_salt"
@@ -109,3 +110,12 @@ func _on_AnimatedSprite_animation_finished():
 
 func _on_Timer_timeout():
 	pot_disparar = true
+	
+func hit():
+	health -= 25
+	get_parent().get_node("Health Bar 1").update_health(health)
+	
+
+func death():
+	if health <= 0:
+		get_tree().change_scene("res://Scenes/Game Over.tscn")
