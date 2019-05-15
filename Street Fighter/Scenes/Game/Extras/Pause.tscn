@@ -12,17 +12,9 @@ font_data = ExtResource( 2 )
 
 [node name="Pause" type="Control"]
 pause_mode = 2
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
-
-[node name="Fons" type="ColorRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -0.857361
-margin_right = -0.857422
-color = Color( 0, 0, 0, 0.219608 )
 
 [node name="Menu" type="ColorRect" parent="."]
 anchor_left = 0.5
