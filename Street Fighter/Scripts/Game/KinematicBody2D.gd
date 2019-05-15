@@ -67,7 +67,7 @@ func anima():
 		$AnimatedSprite.animation = "pega_dret"
 		pegant = true
 
-	elif Input.is_action_pressed("ui_accept") and is_on_floor():
+	elif Input.is_action_pressed("ui_select") and is_on_floor():
 		$AnimatedSprite.animation = "pega_esq"
 		pegant = true
 
