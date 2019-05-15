@@ -43,7 +43,9 @@ tile_data = PoolIntArray( 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0
 position = Vector2( 1000, 1000 )
 scale = Vector2( 0.5, 0.5 )
 
+
 [node name="Ryu" parent="." instance=ExtResource( 6 )]
+
 
 [node name="Bola" type="Node" parent="."]
 
