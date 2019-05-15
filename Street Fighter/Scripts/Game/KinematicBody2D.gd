@@ -16,6 +16,7 @@ func _ready():
 func _process(delta):
 	mou()
 	anima()
+	death()
 
 func mou():
 	#posar += si es vol que les dos tecles vagin a lhora i vagi en diagonal

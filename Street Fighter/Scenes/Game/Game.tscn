@@ -34,6 +34,7 @@ position = Vector2( 1000, 1000 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Ryu" parent="." instance=ExtResource( 5 )]
+position = Vector2( 230.309, 305.907 )
 
 [node name="Bola" type="Node" parent="."]
 
