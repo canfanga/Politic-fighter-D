@@ -4,7 +4,7 @@ func _input(event):
 	 nova_pausa()
 	
 func nova_pausa(): 
-	if Input.is_action_pressed ("Pause"):
+	if Input.is_action_just_pressed ("Pause"):
 		var new_pause_state =not get_tree().paused
 		get_tree().paused = new_pause_state
 		visible= new_pause_state
