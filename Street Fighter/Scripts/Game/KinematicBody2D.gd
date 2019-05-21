@@ -29,7 +29,8 @@ func mou():
 		velocitat += saltar
 	if not is_on_floor():
 		velocitat += gravetat
-	velocitat = move_and_slide(velocitat,Vector2(0,-1))
+	if not pegant:
+		velocitat = move_and_slide(velocitat,Vector2(0,-1))
 
 func anima():
 
@@ -68,7 +69,8 @@ func anima():
 		pegant = true
 
 	elif Input.is_action_pressed("ui_select") and is_on_floor():
-		$AnimatedSprite.animation = "pega_esq"
+#		$AnimatedSprite.animation = "pega_esq"
+		$AnimationPlayer.play("pega_esq")
 		pegant = true
 
 	if Input.is_action_pressed("patada") and is_on_floor():
