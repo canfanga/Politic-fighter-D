@@ -51,9 +51,11 @@ func anima():
 
 	if velocitat.x < 0:
 		$AnimatedSprite.flip_h = true
+		$CollisionShape2D.scale.x = -1
 		mirant_dreta = false
 	if velocitat.x > 0:
 		$AnimatedSprite.flip_h = false
+		$CollisionShape2D.scale.x = 1
 		mirant_dreta = true
 
 	if not pegant:
@@ -62,8 +64,9 @@ func anima():
 		elif velocitat.x > 0 and is_on_floor():
 			$AnimatedSprite.animation = "camina"
 		elif velocitat.x == 0 and is_on_floor():
-			$AnimatedSprite.animation = "quiet"
-
+#			$AnimatedSprite.animation = "quiet"
+			$AnimationPlayer.play("quiet")
+			
 	if Input.is_action_pressed("pega_dreta") and is_on_floor():
 		$AnimatedSprite.animation = "pega_dret"
 		pegant = true
@@ -74,7 +77,8 @@ func anima():
 		pegant = true
 
 	if Input.is_action_pressed("patada") and is_on_floor():
-		$AnimatedSprite.animation = "patada"
+#		$AnimatedSprite.animation = "patada"
+		$AnimationPlayer.play("patada")
 		pegant = true
 
 	if Input.is_action_pressed("patada_forta") and is_on_floor():
