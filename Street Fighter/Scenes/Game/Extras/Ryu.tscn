@@ -1,39 +1,39 @@
 [gd_scene load_steps=39 format=2]
 
-[ext_resource path="res://Scripts/Game/KinematicBody2D.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Game/Ryu2.gd" type="Script" id=1]
 [ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/1.png" type="Texture" id=2]
 [ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/2.png" type="Texture" id=3]
 [ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/3.png" type="Texture" id=4]
 [ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/4.png" type="Texture" id=5]
 [ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/5.png" type="Texture" id=6]
-[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/1.png" type="Texture" id=7]
-[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/2.png" type="Texture" id=8]
-[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/3.png" type="Texture" id=9]
-[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/4.png" type="Texture" id=10]
-[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/5.png" type="Texture" id=11]
-[ext_resource path="res://Assets/animacions provisionals/respira/1.png" type="Texture" id=12]
-[ext_resource path="res://Assets/animacions provisionals/respira/2.png" type="Texture" id=13]
-[ext_resource path="res://Assets/animacions provisionals/respira/3.png" type="Texture" id=14]
-[ext_resource path="res://Assets/animacions provisionals/respira/4.png" type="Texture" id=15]
-[ext_resource path="res://Assets/animacions provisionals/pegar/patada_fluixa/1.png" type="Texture" id=16]
-[ext_resource path="res://Assets/animacions provisionals/pegar/patada_fluixa/2.png" type="Texture" id=17]
-[ext_resource path="res://Assets/animacions provisionals/pegar/esquerra/1.png" type="Texture" id=18]
-[ext_resource path="res://Assets/animacions provisionals/pegar/dreta/2.png" type="Texture" id=19]
-[ext_resource path="res://Assets/animacions provisionals/pegar/dreta/3.png" type="Texture" id=20]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/1.png" type="Texture" id=21]
-[ext_resource path="res://Assets/animacions provisionals/salta/normal/3.png" type="Texture" id=22]
-[ext_resource path="res://Assets/animacions provisionals/salta/normal/4.png" type="Texture" id=23]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/5.png" type="Texture" id=24]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/6.png" type="Texture" id=25]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/2.png" type="Texture" id=26]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/3.png" type="Texture" id=27]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/4.png" type="Texture" id=28]
-[ext_resource path="res://Assets/animacions provisionals/camina/1.png" type="Texture" id=29]
-[ext_resource path="res://Assets/animacions provisionals/camina/2.png" type="Texture" id=30]
-[ext_resource path="res://Assets/animacions provisionals/camina/3.png" type="Texture" id=31]
-[ext_resource path="res://Assets/animacions provisionals/camina/4.png" type="Texture" id=32]
-[ext_resource path="res://Assets/animacions provisionals/camina/5.png" type="Texture" id=33]
-[ext_resource path="res://Assets/animacions provisionals/pegar/esquerra/2.png" type="Texture" id=34]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/animacions provisionals/salta/normal/3.png" type="Texture" id=8]
+[ext_resource path="res://Assets/animacions provisionals/salta/normal/4.png" type="Texture" id=9]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/2.png" type="Texture" id=10]
+[ext_resource path="res://Assets/animacions provisionals/pegar/esquerra/1.png" type="Texture" id=11]
+[ext_resource path="res://Assets/animacions provisionals/pegar/esquerra/2.png" type="Texture" id=12]
+[ext_resource path="res://Assets/animacions provisionals/respira/1.png" type="Texture" id=13]
+[ext_resource path="res://Assets/animacions provisionals/respira/2.png" type="Texture" id=14]
+[ext_resource path="res://Assets/animacions provisionals/respira/3.png" type="Texture" id=15]
+[ext_resource path="res://Assets/animacions provisionals/respira/4.png" type="Texture" id=16]
+[ext_resource path="res://Assets/animacions provisionals/pegar/patada_fluixa/1.png" type="Texture" id=17]
+[ext_resource path="res://Assets/animacions provisionals/pegar/patada_fluixa/2.png" type="Texture" id=18]
+[ext_resource path="res://Assets/animacions provisionals/camina/1.png" type="Texture" id=19]
+[ext_resource path="res://Assets/animacions provisionals/camina/2.png" type="Texture" id=20]
+[ext_resource path="res://Assets/animacions provisionals/camina/3.png" type="Texture" id=21]
+[ext_resource path="res://Assets/animacions provisionals/camina/4.png" type="Texture" id=22]
+[ext_resource path="res://Assets/animacions provisionals/camina/5.png" type="Texture" id=23]
+[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/1.png" type="Texture" id=24]
+[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/2.png" type="Texture" id=25]
+[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/3.png" type="Texture" id=26]
+[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/4.png" type="Texture" id=27]
+[ext_resource path="res://Assets/animacions provisionals/pegar/patada_forta/5.png" type="Texture" id=28]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/5.png" type="Texture" id=29]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/6.png" type="Texture" id=30]
+[ext_resource path="res://Assets/animacions provisionals/pegar/dreta/2.png" type="Texture" id=31]
+[ext_resource path="res://Assets/animacions provisionals/pegar/dreta/3.png" type="Texture" id=32]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/3.png" type="Texture" id=33]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/4.png" type="Texture" id=34]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -42,68 +42,68 @@ animations = [ {
 "name": "kamikami",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
-"loop": false,
-"name": "patada_forta",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
-"loop": true,
-"name": "quiet",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 16 ) ],
-"loop": false,
-"name": "patada",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 18 ) ],
-"loop": false,
-"name": "pega_dret",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": false,
 "name": "puja_salt",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 24 ), ExtResource( 25 ) ],
-"loop": false,
-"name": "voltereta_avall",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
-"loop": false,
-"name": "voltereta_amunt",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 22 ) ],
-"loop": true,
-"name": "baixa_salt",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 26 ) ],
+"frames": [ ExtResource( 10 ) ],
 "loop": false,
 "name": "acaba_voltereta",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ) ],
-"loop": true,
-"name": "camina",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 18 ), ExtResource( 34 ), ExtResource( 18 ) ],
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 11 ) ],
 "loop": false,
 "name": "pega_esq",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 21 ) ],
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "quiet",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 17 ) ],
+"loop": false,
+"name": "patada",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "camina",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": false,
+"name": "patada_forta",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ) ],
+"loop": false,
+"name": "voltereta_avall",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "pega_dret",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 33 ), ExtResource( 34 ) ],
+"loop": false,
+"name": "voltereta_amunt",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "baixa_salt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "acaba_salt",
 "speed": 5.0
 } ]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "patada"
 step = 0.5
 tracks/0/type = "value"
@@ -155,8 +155,7 @@ tracks/3/keys = {
 "values": [ PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -26.6468, 61.7932, -26.6468, 21.0235, -54.9077, -30.8654, -30.9571, -78.7791 ), PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 21.469, -37.5608, 79.5028, -79.3452, 100.395, -56.1316, 26.8855, 9.64001, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -26.6468, 61.7932, -26.6468, 21.0235, -54.9077, -30.8654, -30.9571, -78.7791 ), PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 30.7545, -39.8822, 47.0039, 7.31866, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -26.6468, 61.7932, -26.6468, 21.0235, -54.9077, -30.8654, -30.9571, -78.7791 ) ]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "pega_esq"
+[sub_resource type="Animation" id=3]
 step = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
@@ -201,10 +200,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 1 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ false, true ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -257,7 +256,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 0.3, 0.6, 0.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -26.6468, 61.7932, -26.6468, 21.0235, -54.9077, -30.8654, -30.9571, -78.7791 ), PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -26.6468, 61.7932, -26.6468, 21.0235, -54.9077, -30.8654, -30.9571, -78.7791 ), PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -26.6468, 61.7932, -26.6468, 21.0235, -54.9077, -30.8654, -30.9571, -78.7791 ), PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -26.6468, 61.7932, -26.6468, 21.0235, -54.9077, -30.8654, -30.9571, -78.7791 ) ]
+"values": [ PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -34.7846, 64.0719, -39.9288, 44.3523, -33.9272, 18.6312, -26.2108, -17.3784, -30.9571, -78.7791 ), PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -34.7846, 64.0719, -39.9288, 44.3523, -33.9272, 18.6312, -26.2108, -17.3784, -30.9571, -78.7791 ), PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -34.7846, 64.0719, -39.9288, 44.3523, -33.9272, 18.6312, -26.2108, -17.3784, -30.9571, -78.7791 ), PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -34.7846, 64.0719, -39.9288, 44.3523, -33.9272, 18.6312, -26.2108, -17.3784, -30.9571, -78.7791 ) ]
 }
 
 [node name="Ryu" type="KinematicBody2D"]
@@ -266,11 +265,12 @@ script = ExtResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 1 )
-animation = "quiet"
+animation = "pega_esq"
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( -1.02304, 5.72146 )
-polygon = PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -26.6468, 61.7932, -26.6468, 21.0235, -54.9077, -30.8654, -30.9571, -78.7791 )
+polygon = PoolVector2Array( 0.808868, -86.9242, 30.1312, -79.5937, 44.7003, -2.60451, 38.2142, 86.8111, 50.4939, 108.558, -43.1747, 109.373, -34.7846, 64.0719, -39.9288, 44.3523, -33.9272, 18.6312, -26.2108, -17.3784, -30.9571, -78.7791 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2( -2.85461, 113.092 )
@@ -283,11 +283,10 @@ position = Vector2( 93.3567, -19.1124 )
 position = Vector2( -73.4315, -17.946 )
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/patada = SubResource( 3 )
-anims/pega_esq = SubResource( 2 )
+anims/patada = SubResource( 2 )
+anims/pega_esq = SubResource( 3 )
 anims/quiet = SubResource( 4 )
 
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Bales/Fantasma.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 3.20948, 3.76798 )
+
+[node name="Punch - Kick" type="Area2D"]
+scale = Vector2( 3, 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( -0.263168, 0.263153 )
+scale = Vector2( -0.06, 0.05 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.00324893, 0.11111 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_Kamikami_body_entered"]

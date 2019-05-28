@@ -7,7 +7,8 @@ var saltar = Vector2(0,-550)
 var pegant = false
 var pot_disparar = true
 var mirant_dreta = true
-var escena_bola = preload("res://Scenes/Game/Extras/Kamikami.tscn")
+var escena_bola = preload("res://Scenes/Game/Extras/KamiKami2.tscn")
+var thing = preload("res://Scenes/Game/Extras/Punch - Kick.tscn")
 var health = 100
 
 func _ready():
@@ -50,13 +51,13 @@ func anima():
 			$AnimatedSprite.animation = "acaba_salt"
 
 	if velocitat.x < 0:
-		$AnimatedSprite.flip_h = true
-		$CollisionShape2D.scale.x = -1
-		mirant_dreta = false
-	if velocitat.x > 0:
 		$AnimatedSprite.flip_h = false
 		$CollisionShape2D.scale.x = 1
 		mirant_dreta = true
+	if velocitat.x > 0:
+		$AnimatedSprite.flip_h = true
+		$CollisionShape2D.scale.x = -1
+		mirant_dreta = false
 
 	if not pegant:
 		if velocitat.x < 0 and is_on_floor():
@@ -67,23 +68,25 @@ func anima():
 #			$AnimatedSprite.animation = "quiet"
 			$AnimationPlayer.play("quiet")
 			
-	if Input.is_action_pressed("pega_dreta") and is_on_floor():
-		$AnimatedSprite.animation = "pega_dret"
-		pegant = true
-
-	elif Input.is_action_pressed("ui_select") and is_on_floor():
-#		$AnimatedSprite.animation = "pega_esq"
+	if Input.is_action_pressed("ui_select") and is_on_floor():
 		$AnimationPlayer.play("pega_esq")
 		pegant = true
+	
+
+	#elif Input.is_action_pressed("pega_dreta") and is_on_floor():
+#	#	$AnimatedSprite.animation = "pega_esq"
+	#	$AnimationPlayer.play("pega_dret")
+	#	pegant = true
 
 	if Input.is_action_pressed("patada") and is_on_floor():
 #		$AnimatedSprite.animation = "patada"
 		$AnimationPlayer.play("patada")
 		pegant = true
+	
 
-	if Input.is_action_pressed("patada_forta") and is_on_floor():
-		$AnimatedSprite.animation = "patada_forta"
-		pegant = true
+	#if Input.is_action_pressed("patada_forta") and is_on_floor():
+	#	$AnimatedSprite.animation = "patada_forta"
+	#	pegant = true
 
 	if pot_disparar:
 		if Input.is_action_pressed("KamiKami") and is_on_floor():
@@ -103,7 +106,7 @@ func kamikami(mirant_dreta):
 func crea_bala(posicio):
 	var bola_foc = escena_bola.instance()
 	bola_foc.position = posicio
-	if not mirant_dreta:
+	if  mirant_dreta:
 		bola_foc.velocitat_bola *= -1
 		bola_foc.velocitat_rotacio *= -1
 		bola_foc.get_node('Sprite').flip_h = true
@@ -114,15 +117,19 @@ func _on_AnimatedSprite_animation_finished():
 	pegant = false
 	if $AnimatedSprite.animation == 'kamikami':
 		kamikami(mirant_dreta)
+	#if $AnimationPlayer.is_playing("pega_esq"):
+	
 
 func _on_Timer_timeout():
 	pot_disparar = true
 	
 func hit():
 	health -= 25
-	get_parent().get_node("Health Bar 1").update_health(health)
+	get_parent().get_node("Health Bar 2").update_health(health)
 	
 
 func death():
 	if health <= 0:
 		get_tree().change_scene("res://Scenes/Game Over.tscn")
+		
+	

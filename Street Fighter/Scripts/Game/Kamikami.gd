@@ -10,7 +10,6 @@ var velocitat_rotacio = 250
 func _ready():
 	velocitat.x = velocitat_bola
 	
-
 func _physics_process(delta):
 	position += velocitat * delta
 	rotation_degrees += velocitat_rotacio * delta
@@ -18,3 +17,9 @@ func _physics_process(delta):
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 
+
+
+func _on_Kamikami_body_entered(body):
+	if body.has_method('hit'):
+		body.hit()
+		queue_free()
