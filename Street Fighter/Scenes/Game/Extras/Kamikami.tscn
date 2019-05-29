@@ -7,7 +7,7 @@
 extents = Vector2( 13.7072, 14.6107 )
 
 [node name="Kamikami" type="Area2D"]
-scale = Vector2( 3, 3 )
+scale = Vector2( 2.2, 2 )
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
