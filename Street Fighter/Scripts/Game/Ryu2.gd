@@ -125,10 +125,12 @@ func _on_Timer_timeout():
 	pot_disparar = true
 	
 func hit():
+	$AudioStreamPlayer2D.play()
 	health -= 25
 	get_parent().get_node("Health Bar 2").update_health(health)
 
 func hit2():
+	$AudioStreamPlayer2D.play()
 	health -= 10
 	get_parent().get_node("Health Bar 2").update_health(health)
 

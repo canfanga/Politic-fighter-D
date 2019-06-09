@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Roblox Death Sound Effect.ogg-160091681acea64bb5a25573944e42bf.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Roblox Death Sound Effect.ogg"
+dest_files=[ "res://.import/Roblox Death Sound Effect.ogg-160091681acea64bb5a25573944e42bf.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
