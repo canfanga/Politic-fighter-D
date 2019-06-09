@@ -57,6 +57,7 @@ func anima():
 	if velocitat.x > 0:
 		$AnimatedSprite.flip_h = true
 		$CollisionShape2D.scale.x = -1
+		
 		mirant_dreta = false
 
 	if not pegant:
@@ -126,7 +127,10 @@ func _on_Timer_timeout():
 func hit():
 	health -= 25
 	get_parent().get_node("Health Bar 2").update_health(health)
-	
+
+func hit2():
+	health -= 25
+	get_parent().get_node("Health Bar 2").update_health(health)
 
 func death():
 	if health <= 0:

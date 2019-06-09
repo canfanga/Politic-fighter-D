@@ -123,6 +123,10 @@ func hit():
 	health -= 25
 	get_parent().get_node("Health Bar 1").update_health(health)
 	
+func hit1():
+	health -= 25
+	get_parent().get_node("Health Bar 1").update_health(health)
+	
 
 func death():
 	if health <= 0:
