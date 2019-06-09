@@ -1,23 +1,23 @@
 [gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Scripts/Game/Ryu1.gd" type="Script" id=1]
-[ext_resource path="res://Assets/animacions provisionals/camina/1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/animacions provisionals/camina/2.png" type="Texture" id=3]
-[ext_resource path="res://Assets/animacions provisionals/camina/3.png" type="Texture" id=4]
-[ext_resource path="res://Assets/animacions provisionals/camina/4.png" type="Texture" id=5]
-[ext_resource path="res://Assets/animacions provisionals/camina/5.png" type="Texture" id=6]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/1.png" type="Texture" id=7]
-[ext_resource path="res://Assets/animacions provisionals/respira/1.png" type="Texture" id=8]
-[ext_resource path="res://Assets/animacions provisionals/respira/2.png" type="Texture" id=9]
-[ext_resource path="res://Assets/animacions provisionals/respira/3.png" type="Texture" id=10]
-[ext_resource path="res://Assets/animacions provisionals/respira/4.png" type="Texture" id=11]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/5.png" type="Texture" id=12]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/6.png" type="Texture" id=13]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/1.png" type="Texture" id=14]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/2.png" type="Texture" id=15]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/3.png" type="Texture" id=16]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/4.png" type="Texture" id=17]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/5.png" type="Texture" id=18]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/3.png" type="Texture" id=4]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/4.png" type="Texture" id=5]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/5.png" type="Texture" id=6]
+[ext_resource path="res://Assets/animacions provisionals/camina/1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/animacions provisionals/camina/2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/animacions provisionals/camina/3.png" type="Texture" id=9]
+[ext_resource path="res://Assets/animacions provisionals/camina/4.png" type="Texture" id=10]
+[ext_resource path="res://Assets/animacions provisionals/camina/5.png" type="Texture" id=11]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/1.png" type="Texture" id=12]
+[ext_resource path="res://Assets/animacions provisionals/respira/1.png" type="Texture" id=13]
+[ext_resource path="res://Assets/animacions provisionals/respira/2.png" type="Texture" id=14]
+[ext_resource path="res://Assets/animacions provisionals/respira/3.png" type="Texture" id=15]
+[ext_resource path="res://Assets/animacions provisionals/respira/4.png" type="Texture" id=16]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/5.png" type="Texture" id=17]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/6.png" type="Texture" id=18]
 [ext_resource path="res://Assets/animacions provisionals/pegar/patada_fluixa/1.png" type="Texture" id=19]
 [ext_resource path="res://Assets/animacions provisionals/pegar/patada_fluixa/2.png" type="Texture" id=20]
 [ext_resource path="res://Assets/animacions provisionals/salta/volteret/2.png" type="Texture" id=21]
@@ -41,29 +41,29 @@
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "kamikami",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "camina",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 7 ) ],
+"frames": [ ExtResource( 12 ) ],
 "loop": true,
 "name": "acaba_salt",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
 "loop": true,
 "name": "quiet",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 17 ), ExtResource( 18 ) ],
 "loop": false,
 "name": "voltereta_avall",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
-"loop": false,
-"name": "kamikami",
-"speed": 5.0
 }, {
 "frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 19 ) ],
 "loop": false,
@@ -95,7 +95,7 @@ animations = [ {
 "name": "pega_esq",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 33 ), ExtResource( 34 ) ],
+"frames": [ ExtResource( 12 ), ExtResource( 33 ), ExtResource( 34 ) ],
 "loop": false,
 "name": "puja_salt",
 "speed": 5.0
@@ -368,5 +368,18 @@ shape = SubResource( 2 )
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 37 )
 
+[node name="Label" type="Label" parent="."]
+margin_left = -29.0
+margin_top = -115.0
+margin_right = 29.0
+margin_bottom = -101.0
+text = "PLAYER 1"
+
+[node name="Timer1" type="Timer" parent="Label"]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Label/Timer1" to="." method="_on_Timer1_timeout"]

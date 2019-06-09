@@ -133,4 +133,8 @@ func hit1():
 
 func death():
 	if health <= 0:
-		get_tree().change_scene("res://Scenes/Game Over.tscn")
+		get_tree().change_scene("res://Scenes/Game Over2.tscn")
+
+
+func _on_Timer1_timeout():
+	$Label.visible = false

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Zelda  - Ocarina Of Time Open Chest With get Item sound.ogg-5ecfcb6bb60d983d48b6a63557237e9b.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Zelda  - Ocarina Of Time Open Chest With get Item sound.ogg"
+dest_files=[ "res://.import/Zelda  - Ocarina Of Time Open Chest With get Item sound.ogg-5ecfcb6bb60d983d48b6a63557237e9b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
