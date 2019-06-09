@@ -14,5 +14,4 @@ scale = Vector2( -0.06, 0.05 )
 position = Vector2( 0.00324893, 0.11111 )
 shape = SubResource( 1 )
 
-[connection signal="body_entered" from="." to="." method="_on_Kamikami_body_entered"]
 [connection signal="body_entered" from="." to="." method="_on_Punch__Kick_body_entered"]
