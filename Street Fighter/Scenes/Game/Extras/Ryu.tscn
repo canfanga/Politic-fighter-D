@@ -1,23 +1,23 @@
 [gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Scripts/Game/Ryu2.gd" type="Script" id=1]
-[ext_resource path="res://Assets/animacions provisionals/camina/1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/animacions provisionals/camina/2.png" type="Texture" id=3]
-[ext_resource path="res://Assets/animacions provisionals/camina/3.png" type="Texture" id=4]
-[ext_resource path="res://Assets/animacions provisionals/camina/4.png" type="Texture" id=5]
-[ext_resource path="res://Assets/animacions provisionals/camina/5.png" type="Texture" id=6]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/1.png" type="Texture" id=7]
-[ext_resource path="res://Assets/animacions provisionals/respira/1.png" type="Texture" id=8]
-[ext_resource path="res://Assets/animacions provisionals/respira/2.png" type="Texture" id=9]
-[ext_resource path="res://Assets/animacions provisionals/respira/3.png" type="Texture" id=10]
-[ext_resource path="res://Assets/animacions provisionals/respira/4.png" type="Texture" id=11]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/5.png" type="Texture" id=12]
-[ext_resource path="res://Assets/animacions provisionals/salta/volteret/6.png" type="Texture" id=13]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/1.png" type="Texture" id=14]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/2.png" type="Texture" id=15]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/3.png" type="Texture" id=16]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/4.png" type="Texture" id=17]
-[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/5.png" type="Texture" id=18]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/3.png" type="Texture" id=4]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/4.png" type="Texture" id=5]
+[ext_resource path="res://Assets/animacions provisionals/pegar/kamikamika/5.png" type="Texture" id=6]
+[ext_resource path="res://Assets/animacions provisionals/camina/1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/animacions provisionals/camina/2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/animacions provisionals/camina/3.png" type="Texture" id=9]
+[ext_resource path="res://Assets/animacions provisionals/camina/4.png" type="Texture" id=10]
+[ext_resource path="res://Assets/animacions provisionals/camina/5.png" type="Texture" id=11]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/1.png" type="Texture" id=12]
+[ext_resource path="res://Assets/animacions provisionals/respira/1.png" type="Texture" id=13]
+[ext_resource path="res://Assets/animacions provisionals/respira/2.png" type="Texture" id=14]
+[ext_resource path="res://Assets/animacions provisionals/respira/3.png" type="Texture" id=15]
+[ext_resource path="res://Assets/animacions provisionals/respira/4.png" type="Texture" id=16]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/5.png" type="Texture" id=17]
+[ext_resource path="res://Assets/animacions provisionals/salta/volteret/6.png" type="Texture" id=18]
 [ext_resource path="res://Assets/animacions provisionals/pegar/patada_fluixa/1.png" type="Texture" id=19]
 [ext_resource path="res://Assets/animacions provisionals/pegar/patada_fluixa/2.png" type="Texture" id=20]
 [ext_resource path="res://Assets/animacions provisionals/salta/volteret/2.png" type="Texture" id=21]
@@ -40,29 +40,29 @@
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "kamikami",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "camina",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 7 ) ],
+"frames": [ ExtResource( 12 ) ],
 "loop": true,
 "name": "acaba_salt",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
 "loop": true,
 "name": "quiet",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 13 ) ],
+"frames": [ ExtResource( 17 ), ExtResource( 18 ) ],
 "loop": false,
 "name": "voltereta_avall",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
-"loop": false,
-"name": "kamikami",
-"speed": 5.0
 }, {
 "frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 19 ) ],
 "loop": false,
@@ -94,7 +94,7 @@ animations = [ {
 "name": "pega_esq",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 33 ), ExtResource( 34 ) ],
+"frames": [ ExtResource( 12 ), ExtResource( 33 ), ExtResource( 34 ) ],
 "loop": false,
 "name": "puja_salt",
 "speed": 5.0
@@ -105,10 +105,10 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 43.8575, 99.9758 )
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=3]
 step = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
@@ -168,10 +168,22 @@ tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 6 ) ]
+"values": [ SubResource( 2 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Punch - Kick2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Vector2( -80, -56 ), Vector2( 0, 0 ) ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=4]
 step = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:frame")
@@ -231,13 +243,25 @@ tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 6 ) ]
+"values": [ SubResource( 2 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Punch - Kick2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ Vector2( -62, -42 ), Vector2( 0, 0 ) ]
 }
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 43.8575, 99.9758 )
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=6]
 length = 0.9
 step = 0.3
 tracks/0/type = "value"
@@ -298,7 +322,7 @@ tracks/4/keys = {
 "times": PoolRealArray( 0, 0.9 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ SubResource( 2 ), SubResource( 2 ) ]
+"values": [ SubResource( 5 ), SubResource( 5 ) ]
 }
 
 [node name="Ryu" type="KinematicBody2D"]
@@ -326,16 +350,19 @@ position = Vector2( -73.4315, -17.946 )
 wait_time = 2.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/patada = SubResource( 7 )
-anims/pega_esq = SubResource( 8 )
-anims/quiet = SubResource( 5 )
+anims/patada = SubResource( 3 )
+anims/pega_esq = SubResource( 4 )
+anims/quiet = SubResource( 6 )
 
 [node name="Punch - Kick" parent="." instance=ExtResource( 35 )]
 script = ExtResource( 36 )
 
+[node name="Punch - Kick2" parent="." instance=ExtResource( 35 )]
+script = ExtResource( 36 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -1.7254, 13.2282 )
-shape = SubResource( 6 )
+shape = SubResource( 2 )
 
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

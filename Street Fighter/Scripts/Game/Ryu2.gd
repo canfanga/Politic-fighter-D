@@ -129,7 +129,7 @@ func hit():
 	get_parent().get_node("Health Bar 2").update_health(health)
 
 func hit2():
-	health -= 25
+	health -= 10
 	get_parent().get_node("Health Bar 2").update_health(health)
 
 func death():

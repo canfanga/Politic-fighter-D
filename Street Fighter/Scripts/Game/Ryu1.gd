@@ -53,6 +53,7 @@ func anima():
 		$AnimatedSprite.flip_h = true
 		$CollisionShape2D.scale.x = -1
 		mirant_dreta = false
+		
 	if velocitat.x > 0:
 		$AnimatedSprite.flip_h = false
 		$CollisionShape2D.scale.x = 1
@@ -124,7 +125,7 @@ func hit():
 	get_parent().get_node("Health Bar 1").update_health(health)
 	
 func hit1():
-	health -= 25
+	health -= 10
 	get_parent().get_node("Health Bar 1").update_health(health)
 	
 
